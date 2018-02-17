@@ -70,3 +70,5 @@ $(document).ready(function(){
      autoplayTimeout : 4000,
      smartSpeed: 700
   });
+
+    
