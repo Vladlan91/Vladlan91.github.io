@@ -1,0 +1,65 @@
+<div class="top-header">
+			<div class="container">
+				<div class="logo">
+					<a href="index.html"><img src="images/logo.png" alt="" /></a>
+				</div>
+				<div class="top-nav">
+						<label class="menu"> </label>
+					<ul>
+						<li><a href="#/">Головна <span class="us-box"> </span></a></li>
+						<li><a href="#blog">Блог<span class="us-box"> </span></a></li>
+						<li><a href="#teaching" >Навчання <span class="us-box"> </span></a></li>
+						<li><a href="#consulting" >Консалтинг <span class="us-box"> </span></a></li>
+						<li><a href="#automation" >Автоматизація<span class="us-box"> </span></a></li>
+					</ul>
+
+			<script>
+			$("label.menu").click(function(){
+				$(".top-nav ul").slideToggle(700, function(){
+				});
+			});
+			</script>
+			<script type="text/javascript">
+					jQuery(document).ready(function($) {
+						$(".scroll").click(function(event){		
+							event.preventDefault();
+							$('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
+						});
+					});
+					</script>
+		
+				</div>
+				<div class="clearfix"> </div>
+			</div>
+		</div>
+		
+	<div class="content">
+		<div class="global-design-five" id="about">
+			<div class="container"> 
+				<div class="contact-top-two">
+					<h3>МИ ПРОПОНУЄМО!</h3>
+					<img class="img-responsive line-grid" src="images/li-1.png" alt=""/> 
+					</div>
+				<div class=" idea-get-five">
+					<a href="#teaching"><img src="images/ca.png" alt="" /></a>
+					<h4>НАВЧАННЯ</h4>	
+					<p>Для успішного впровадження принципів бережливого виробництва
+необхідно навчати персонал принципам Lean.</p>		
+				</div>
+				<div class=" idea-get-five">
+					<a href="#consulting"><img src="images/gla.png" alt="" /></a>
+					<h4>КОНСАЛТИНГ</h4>	
+					<p>Аналіз стану компанії, створення нової моделі бізнес-процесів на основі концепції бережливого виробництва.</p>		
+				</div>
+				<div class=" idea-get-five">
+					<a href="#automation"><img src="images/glo.png" alt="" /></a>
+					<h4>АВТОМАТИЗАЦІЯ</h4>	
+					<p> Ми допоможемо Вам автоматизувати бізнес процес, отримувати повну і достовірну
+інформацію про стан компанії.</p>		
+				</div>
+				<div class="clearfix"> </div>
+			</div>
+		</div>
+	</div>
+		<?php require_once "blocks/new-one.php" ?>
+	</div>
