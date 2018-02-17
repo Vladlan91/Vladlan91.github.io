@@ -1,219 +1,368 @@
 <!DOCTYPE html>
-<html>
-<head>	
-<meta charset="utf-8">
-<link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all" charset="utf-8"/>
-<link href="css/style.css" rel="stylesheet" type="text/css" media="all" />	
-<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800' rel='stylesheet' type='text/css'>
-<link rel="shortcut icon" href="../favicon.ico"> 
-<link href="css/bootstrap.min.css" rel="stylesheet">
-<link rel="stylesheet" type="text/css" href="css/paralax.css" />
-<link rel="stylesheet" type="text/css" href="css/styleParalax.css" />
-<script src="js/jquery.min.js"></script>
-<script type="text/javascript" src="js/move-top.js"></script>
-<script type="text/javascript" src="js/easing.js"></script>
-<link href="fonts/font-awesome-4.2.0/css/font-awesome.min.css" rel="stylesheet">
-<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-<script src="js/vendor/modernizr-2.6.2.min.js"></script>
+<html lang="ru">
+
+<head>
+	<meta charset="utf-8">
+	<title>Cалон красоты Элион</title>
+	<meta name="description" content="">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<meta property="og:image" content="path/to/image.jpg">
+	<link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
+	<link rel="apple-touch-icon" href="img/favicon/apple-touch-icon.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-touch-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-touch-icon-114x114.png">
+	<!-- Chrome, Firefox OS and Opera -->
+	<meta name="theme-color" content="#1a1a1a">
+	<!-- Windows Phone -->
+	<meta name="msapplication-navbutton-color" content="#1a1a1a">
+	<!-- iOS Safari -->
+	<meta name="apple-mobile-web-app-status-bar-style" content="#1a1a1a">
+	<style>body { opacity: 0; overflow-x: hidden; } html { background-color: #1a1a1a; }</style>
 </head>
 
+<body class="ishome">
 
-			<div class="top-header">
-			<div class="container">
-				<div class="logo">
-				<a href="index.html"><img src="images/logo.png" alt="" /></a>
-				</div>
-				<div class="top-nav">
-						<label class="menu"> </label>
-					<ul>
-						<li><a href="index.html">Головна<span class="us-box"> </span></a></li>
-						<li><a href="news.html">Новини <span class="us-box"> </span></a></li>
-						<li><a href="teaching.html" >Навчання <span class="us-box"> </span></a></li>
-						<li><a href="consulting.html" >Консалтинг <span class="us-box"> </span></a></li>
-						<li><a href="automation.html" >Автоматизація<span class="us-box"> </span></a></li>
-					</ul>
+<!-- MENU -->
 
-			<script>
-			$("label.menu").click(function(){
-				$(".top-nav ul").slideToggle(700, function(){
-				});
-			});
-			</script>
-			<script type="text/javascript">
-					jQuery(document).ready(function($) {
-						$(".scroll").click(function(event){		
-							event.preventDefault();
-							$('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
-						});
-					});
-					</script>
-		
-				</div>
-				<div class="clearfix"> </div>
-			</div>
-		</div>
+      <div id="my-page">
+            <div class="border">
+                  <div id="my-header">
+                        <header class="blog-header" style="background-image: url(img/blog-backgroun.jpg);">
+                        	<div class="top-line">
+                        		<a href="index.html" class="logo"><img src="img/logo-1.jpg" alt="Cалон красоты Элион"></a>
+                        		<div class="phone"><i class="fa fa-mobile"></i>+380 (98) 456 3638</div>
+                                    <a href="#my-men" id="my-icon" class="hamburger hamburger--collapse">
+                                          <span class="hamburger-box">
+                                            <span class="hamburger-inner"></span>
+                                          </span>
+                                    </a>
+                        		<nav id="my-men">
+                        			<ul>
+                                <li><a href=""><strong>МАГАЗИН</strong></a></li>
+                                <li><a href="courses.html"><strong>КУРСЫ</strong></a></li>
+                                <li><a href="price-list.html"><strong>ПРАЙС</strong></a></li>
+                                <li><a href="blog.html"><strong>БЛОГ</strong></a></li>
+                                <li><a href="portfolio.html"><strong>ПОРТФОЛИО</strong></a></li>
+                                <li><a href="contact.html"><strong>КОНТАКТЫ</strong></a></li>
+                        			</ul>
+                        		</nav>
+                        	</div>
+                              <div class="header-flex">
+                                    <div class="flex-center">
+                                          <div class="conteiner">
+                                                <div class="row">
+                                                      <div class="col-sm-11 col-xs-11">
+                                                            <div class="header-composition">
+                                                                  <div class="blog">
+                                                                        <h1 class="h1">БЛОГ</h1>
+                                                                  </div>
+                                                                  <h4 class="eltd-section-subtitle">Sed ut perspiciatis unde omnis iste natus error sit voluptatem ac cusantium dolorem que laudantium, totam remae.</h4>
+                                                            </div>
+                                                      </div>
+                                                </div>
+                                          </div>
+                                    </div>
+                              </div>
+                              <div class="header-social">
+                                    <nav class="social">
+                                          <ul>
+                                                <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                                                <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+                                                <li><a href="#"><i class="fa fa-vk"></i></a></li>
+                                          </ul>
+                                    </nav>
+                              </div>
+                              <div class="header-contacts"></div>
+                        </header>
+                  </div>
+            </div>
 
-	<div class="content">
-		<div class="global-design-fore" id="about">
-			<div class="container"> 
-				<div class="contact-top-fore">
-					<h3>МИ ПРОПОНУЄМО!</h3>
-					<img class="img-responsive line-grid" src="images/li-1.png" alt=""/> 
-					</div>
-				<div class=" idea-get-fore">
-					<a href="teaching.html"><img src="images/ca.png" alt="" /></a>
-					<h4>НАВЧАННЯ</h4>	
-					<p>Для успішного впровадження принципів бережливого виробництва
-необхідно навчати персонал принципам Lean.</p>		
-				</div>
-				<div class=" idea-get-fore">
-					<a href="consulting.html"><img src="images/gla.png" alt="" /></a>
-					<h4>КОНСАЛТИНГ</h4>	
-					<p>Аналіз стану компанії, створення нової моделі бізнес-процесів на основі концепції бережливого виробництва.</p>		
-				</div>
-				<div class=" idea-get-fore">
-					<a href="automation.html"><img src="images/glo.png" alt="" /></a>
-					<h4>АВТОМАТИЗАЦІЯ</h4>	
-					<p> Ми допоможемо Вам автоматизувати бізнес процес, отримувати повну і достовірну
-інформацію про стан компанії.</p>		
-				</div>
-				<div class="clearfix"> </div>
-			</div>
-		</div>
-	
-		
-		<div class="possible">
-			<div class="container">
-				<div class="possible-top">
-					<h3>БЛОГ</h3>
-					<img class="img-responsive line-grid" src="images/li-1.png" alt=""/> 
-				</div>
-			</div>
-		</div>
-		
-			<form  id="form"> 
-					<div class="contact" id="contact">
-						<div class="container">
-							<div class="possible-top">
-								<h3>ЗВ'ЯЖІТЬСЯ З НАМИ</h3>
-								<img class="img-responsive line-grid" src="images/li-1.png" alt=""/> 
-								<p>При виникненні <b>будь яких запитань</b> звертайтесь через зворотній зв'язок, <b>також Ви можете  зв'язатись з нами за телефонами, які вказано нижче.</p>
-							</div>
-							<?php require_once "blocks/form.php" ?>
-							</form>
-							<div class="contact-bottom">
-								<div class="col-md-5 sit-contact">
-									<h5>КОНСАЛТИНГ - АНАЛІТИКА</h5>
-									<div class="contact-add">
-									    <p>Консультант з консалтингових питань</p>
-										<p>(586)769-9037</p>
-									</div>
-									<h5>НАВЧАЛЬНА  АКАДЕМІЯ</h5>
-									<div class="contact-add">
-									    <p>Консультант Академії <a class="base-line" href="">Lean </a></p>
-									    <p>(586)769-9037</p>
-									</div>
-									<ul class="face">
-										<li class="active"><a href="#">facebook </a><span>/</span></li>
-										<li><a href="#">twitter </a><span>/</span></li>
-										<li><a href="#">linked in </a></li>
-									</ul>
-								</div>
-								<div class="col-md-7">
-									<div class="map">
-									<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d325515.68162413995!2d30.252508697409862!3d50.402136754523056!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4cf4ee15a4505%3A0x764931d2170146fe!2z0JrQuNGX0LI!5e0!3m2!1suk!2sua!4v1492341963243" frameborder="0" style="border:0" allowfullscreen></iframe>
-									</div>
-									<span class="map-icon"> </span>
-								</div>
-								<div class="clearfix"> </div>
-							</div>
+<!-- //MENU -->
 
-						</div>
-					</div>
-				</div>
-					<script type="text/javascript">
-						$(document).ready(function() {
-							$().UItoTop({ easingType: 'easeOutQuart' });
-						});
-					</script>
-				<a href="#about" class="scroll" id="toTop" style="display: block;"> <span id="toTopHover" style="opacity: 1;"> </span></a>
-<div class="footer">
-		<div class="footer-grid-bottom">
-				<div class="container">
-					<div class="col-md-4 bottom-footer-left">
-						<h6>Про нас!</h6>	
-						<p>Ми молода, проте перспективна компанія, наша ціль - конкурентний, прибутковий український бізнес на ринку Європи. </p>
-						<p>Наш інструмент - це ефективна концепція менеджменту, яка була винайдена в компанії <a class="base-line" href="">TOYOTA.</a></p>	
-					</div>
-					<div class="col-md-4 bottom-footer-right">
-						<h6>Photo stream</h6>
-						<div class="photo-left">
-							<div class="photo-right">
-							<a href="#"><img class="img-responsive" src="images/han.jpg" alt="" /></a>
-							</div>
-							<div class="photo-right">
-							<a href="#"><img class="img-responsive" src="images/han1.jpg" alt="" /></a>
-							</div>
-							<div class="photo-right">
-							<a href="#"><img class="img-responsive" src="images/han2.jpg" alt="" /></a>
-							</div>
-							<div class="photo-right">
-							<a href="#"><img class="img-responsive" src="images/han3.jpg" alt="" /></a>
-							</div>
-							<div class="photo-right">
-							<a href="#"><img class="img-responsive" src="images/han4.jpg" alt="" /></a>
-							</div>
-							<div class="photo-right">
-							<a href="#"><img class="img-responsive" src="images/han5.jpg" alt="" /></a>
-							</div>
-							<div class="photo-right">
-							<a href="#"><img class="img-responsive" src="images/han6.jpg" alt="" /></a>
-							</div>
-							<div class="photo-right">
-							<a href="#"><img class="img-responsive" src="images/han7.jpg" alt="" /></a>
-							</div>
-							<div class="clearfix"> </div>
-						</div>
-					</div>
-					<div class="col-md-4 bottom-footer-left">
-						<h6>Останні новини!</h6>	
-						<p>Компанія “Modern-Expo” ділиться досвідом впровадження інструментів бережливого виробництва. </p>
-						<p>Lean Startup визнаний най визнаний найефективнішим інструментом.</p>			
-					</div>
-					<div class="clearfix"> </div>
-				</div>
-			</div>
-			<div class="footer-bottom">
-			</div>
-	 		<script type="text/javascript">
-						$(document).ready(function() {
-							/*
-							var defaults = {
-					  			containerID: 'toTop', // fading element id
-								containerHoverID: 'toTopHover', // fading element hover id
-								scrollSpeed: 1200,
-								easingType: 'linear' 
-					 		};
-							*/
-							
-							$().UItoTop({ easingType: 'easeOutQuart' });
-							
-						});
-					</script>
-				<a href="#" id="toTop" style="display: block;"> <span id="toTopHover" style="opacity: 1;"> </span></a>
-	 </div>
-<script type="text/javascript" src="js/modernizr.custom.04022.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-<script src="https://www.youtube.com/iframe_api"></script>
-<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.2.26/angular.min.js"></script>
-<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.2.26/angular-route.min.js"></script>
-<script src="https://code.jquery.com/jquery-1.11.2.min.js"></script>
-<script src="js/responsiveslides.min.js"></script>	
-<script src="js/common.js"></script>
-<script src="js/route.js"></script>	
-<script src="js/jquery.js"></script>
-<script src="js/main.js"></script>
-   	<!-- JS ROUTE CLOSE--> 	
-</div>
+<!-- CONTENT-->
+
+  <!-- RIGHT CONTENT-->
+
+            <div id="my-content">
+                  <div class="conteiner"> 
+                        <div class="row">
+                              <section class="news" ">
+                                    <div class="conteiner">
+                                          <div class="row">
+                                          <div class="wpb_column vc_column_container col-sm-10 col-lg-offset-3 col-lg-6 col-md-offset-1 col-md-10 col-sm-offset-1" >
+                                                      <div class="wpb_wrapper" >
+                                                           
+                                                            <div style="text-align:center">
+                                                                        <h2> Новости</h2>
+                                                                  <span class="eltd-title-separator eltd-enable-separator"></span>
+                                                             </div>
+                                                       </div>
+                                                </div>
+                                          </div>
+                                    </div> 
+                              </section>
+                              
+                              <div class="col-md-8 col-sm-11 gri">
+                                    <div class="grid">
+                                          <div class="col-sm-6">
+                                                <figure class="effect-bubba">
+                                                      <img src="img/gallery-image-1.jpg" alt="img02"/>
+                                                      <figcaption>
+                                                            <h2><a href="blog-info.html">Fresh <span>Bubba</span></a></h2>
+                                                            <p>Bubba likes to appear out of thin air. </p>
+                                                      </figcaption>                 
+                                                </figure>
+                                          </div>
+                                          <div class="col-sm-6">
+                                                <figure class="effect-bubba">
+                                                      <img src="img/gallery-image-2.jpg" alt="img16"/>
+                                                      <figcaption>
+                                                            <h2><a href="blog-info.html">Fresh <span>Bubba</span></a></h2>
+                                                            <p>Bubba likes to appear out of thin air. </p>
+                                                      </figcaption>                
+                                                </figure>
+                                          </div>
+                                          <div class="col-sm-6">
+                                                <figure class="effect-bubba">
+                                                      <img src="img/gallery-image-3.jpg" alt="img16"/>
+                                                      <figcaption>
+                                                            <h2><a href="blog-info.html">Fresh <span>Bubba</span></a></h2>
+                                                            <p>Bubba likes to appear out of thin air. </p>
+                                                      </figcaption>                
+                                                </figure>
+                                          </div>
+                                          <div class="col-sm-6">
+                                                <figure class="effect-bubba">
+                                                      <img src="img/gallery-image-4.jpg" alt="img16"/>
+                                                      <figcaption>
+                                                            <h2><a href="blog-info.html">Fresh <span>Bubba</span></a></h2>
+                                                            <p>Bubba likes to appear out of thin air. </p>
+                                                      </figcaption>                
+                                                </figure>
+                                          </div>
+                                          <div class="col-sm-6">
+                                                <figure class="effect-bubba">
+                                                      <img src="img/gallery-image-5.jpg" alt="img16"/>
+                                                      <figcaption>
+                                                            <h2><a href="blog-info.html">Fresh <span>Bubba</span></a></h2>
+                                                            <p>Bubba likes to appear out of thin air. </p>
+                                                      </figcaption>                
+                                                </figure>
+                                          </div>
+                                           <div class="col-sm-6">
+                                                <figure class="effect-bubba">
+                                                      <img src="img/gallery-image-6.jpg" alt="img16"/>
+                                                      <figcaption>
+                                                            <h2><a href="blog-info.html">Fresh <span>Bubba</span></a></h2>
+                                                            <p>Bubba likes to appear out of thin air. </p>
+                                                      </figcaption>               
+                                                </figure>
+                                          </div>
+                                    </div>
+                                    <div class="eltd-pagination">
+                                      <ul>
+                                        <li class="eltd-pagination-prev "> 
+                                          <a href="#">
+                                            <span class="arrow_carrot-left"></span>
+                                          </a>
+                                        </li>
+                                        <li class="active">
+                                          <span>1</span>
+                                        </li>
+                                        <li>
+                                          <a href="#" class="inactive">2</a>
+                                        </li>
+                                        <li class="eltd-pagination-next ">
+                                          <a href="#">
+                                            <span class="arrow_carrot-right"></span>
+                                          </a>
+                                        </li>
+                                      </ul>
+                                    </div>
+                              </div>
+    <!-- //RIGHT CONTENT-->
+
+    <!-- LEFT CONTENT-->
+<!-- col-md-4 col-md-offset-1  col-sm-5 col-sm-offset-1 col-xs-10 col-xs-offset-1 -->
+                              <div class="col-md-3 col-md-offset-0 col-sm-6 col-sm-offset-1 col-xs-10 col-xs-offset-1">
+                                <div id="text-6" class="widget widget_text">
+                                  <h3 class="eltd-widget-title">Обо мне</h3>     
+                                  <div class="wpb_single_image wpb_content_element vc_align_center">
+                                    <figure class="wpb_wrapper vc_figure">
+                                      <div class="vc_single_image-wrapper ">
+                                        <img src="img/author.jpg" alt="a">
+                                      </div>
+                                    </figure>
+                                  </div>
+                                </div>
+                                <div id="text-7" class="widget widget_text">      
+                                <div class="textwidget">Sed ut perspiciatis unde omnis iste natus error sit volup tatem accusantium doloremque lauatium, totam rem aperiam perspiciatis unde omnis. <br>
+                                </div>
+                              </div>
+                              <div id="eltd_latest_posts_widget-2" class="widget widget_eltd_latest_posts_widget">
+                                <h3 class="eltd-widget-title">Остание постиы</h3>
+                                <div class="eltd-blog-list-holder eltd-blog-minimal ">
+                                  <ul class="eltd-blog-list">
+                                    <li class="eltd-blog-list-item">
+                                      <div class="eltd-item-image">
+                                        <a href="http://kendall.elated-themes.com/skin-care-routines/">
+                                          <img width="74" height="74" src="img/post.jpg">
+                                        </a>
+                                      </div>
+                                    <div class="eltd-item-text-holder">
+                                      <div class="eltd-item-info-section">
+                                        <div class="eltd-post-info-date">October 21, 2016</div>    
+                                      </div>
+                                        <h3 class="eltd-item-title" style="">
+                                          <a href="http://kendall.elated-themes.com/skin-care-routines/">Skin-Care Routines</a>
+                                        </h3>
+                                      </div>
+                                    </li>
+                                    <li class="eltd-blog-list-item">
+                                      <div class="eltd-item-image">
+                                        <a href="http://kendall.elated-themes.com/skin-care-routines/">
+                                          <img width="74" height="74" src="img/post.jpg">
+                                        </a>
+                                      </div>
+                                    <div class="eltd-item-text-holder">
+                                      <div class="eltd-item-info-section">
+                                        <div class="eltd-post-info-date">October 21, 2016</div>    
+                                      </div>
+                                        <h3 class="eltd-item-title" style="">
+                                          <a href="http://kendall.elated-themes.com/skin-care-routines/">Skin-Care Routines</a>
+                                        </h3>
+                                      </div>
+                                    </li>
+                                    <li class="eltd-blog-list-item">
+                                      <div class="eltd-item-image">
+                                        <a href="http://kendall.elated-themes.com/skin-care-routines/">
+                                          <img width="74" height="74" src="img/post.jpg">
+                                        </a>
+                                      </div>
+                                    <div class="eltd-item-text-holder">
+                                      <div class="eltd-item-info-section">
+                                        <div class="eltd-post-info-date">October 21, 2016</div>    
+                                      </div>
+                                        <h3 class="eltd-item-title" style="">
+                                          <a href="http://kendall.elated-themes.com/skin-care-routines/">Skin-Care Routines</a>
+                                        </h3>
+                                      </div>
+                                    </li>
+                                  </ul>
+                                </div>
+                              </div> 
+                              <div id="nav_menu-2" class="widget widget_nav_menu">
+                                <h3 class="eltd-widget-title">Категории</h3>
+                                <div class="menu-category-menu-container">
+                                  <ul id="menu-category-menu" class="menu">
+                                    <li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-1393">
+                                      <a href="#">КУРСЫ</a>
+                                    </li>
+                                    <li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-1393">
+                                      <a href="#">ВОЛОСИ</a>
+                                    </li>
+                                    <li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-1393">
+                                      <a href="#">МЕЙКАП</a>
+                                    </li>
+                                    <li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-1393">
+                                      <a href="#">МАНИКЮР</a>
+                                    </li>
+                                  </ul>
+                                </div>
+                              </div> 
+                              <div id="tag_cloud-2" class="widget widget_tag_cloud">
+                                <h3 class="eltd-widget-title">Tags</h3>
+                                <div class="tagcloud ">
+                                  <a href="#" class="tag ">Beauty</a>
+                                  <a href="#" class="tag ">Fashion</a>
+                                  <a href="#" class="tag ">Lifestyle</a>
+                                  <a href="#" class="tag ">Living</a>
+                                  <a href="#" class="tag ">Makeup</a>
+                                  <a href="#" class="tag ">Nature</a>
+                                  <a href="#" class="tag ">Style</a>
+                                  <a href="#" class="tag ">Travel</a>
+                                </div>
+                              </div>
+                        </div>                 
+                  </div>
+            </div>
+      </div>
+
+    <!-- //LEFT CONTENT-->
+
+<!-- //CONTENT-->
+
+<!-- FOOTER-->
+
+      <div id="my-footer">
+            <div class="main-footer">
+                  <div class="conteiner">
+                        <div class="row">
+                         
+                            <div class="col-lg-4 col-md-4 col-sm-6">
+                                <div class="footer-col">
+                                      <img href="index.html" src="img/logo-1.jpg" alt="Cалон красоты Элион" class="logo-footer">
+                                      <p class="one">САЛОН КРАСОТЫ БИЗНЕС-КЛАССА</p>
+                                      <p class="two">САЛОН КРАСОТЫ БИЗНЕС-КЛАССА</p>
+                                          <div class="footer-social">
+                                          <nav class="social">
+                                                <ul>
+                                                      <li><a href="#"><i class="fa fa-eye"></i></a></li>
+                                                      <li><a href="#"><i class="fa fa-heart-o"></i></a></li>
+                                                      <li><a href="#"><i class="fa fa-paper-plane"></i></a></li>
+                                                </ul>
+                                          </nav>
+                                    </div>
+                                </div>  
+                            </div>
+                            <div class="col-lg-4 col-md-4  col-sm-6">
+                                <div class="footer-col">
+                                            <nav class="fotter-menu">
+                                                <ul>
+                                                      <li><a href=""><strong>МАГАЗИН</strong></a></li>
+                                                      <li><a href="courses.html"><strong>КУРСЫ</strong></a></li>
+                                                      <li><a href="price-list.html"><strong>ПРАЙС</strong></a></li>
+                                                      <li><a href="blog.html"><strong>БЛОГ</strong></a></li>
+                                                      <li><a href="portfolio.html"><strong>ПОРТФОЛИО</strong></a></li>
+                                                      <li><a href="contact.html"><strong>КОНТАКТЫ</strong></a></li>
+                                                </ul>
+                                    </nav>
+                                </div>  
+                            </div>
+                            <div class="col-lg-4 col-md-4 col-sm-12">
+                                <div class="footer-col-two">
+                                      <p class="footer-adrass"><i class="fa fa-location-arrow"></i>г. Бурштын улица Стуса 8</p>
+                                      <p class="footer-adrass"><i class="fa fa-clock-o"></i>Время работи: ежедневно</p>
+                                      <p class="footer-phone"><i class="fa fa-mobile"></i><span>+380 (98) 456 3638</span></p>
+
+                                </div>  
+                            </div>
+                              
+                        </div>
+                        <div class="row">
+                              <div class="col-sm-12">
+                                    <div class="copy-row">
+                                          <div class="copy">© ELION, 2016-2018. Компания ФАП «ЧНИ». Все права защищены.</div>
+                                          <div class="developers">
+                                                <a href="#" class="dev-text" rel="nofollow" target="_blank">
+                                                  Разработан компанией © ITM
+                                                </a>
+                                                <div class="dev-logo">
+                                                  <img id="two" src="img/dev-logo2.jpg" alt="" > 
+                                                </div> 
+                                          </div>
+                                    </div>
+                              </div>
+                        </div>
+                  </div>
+            </div>
+      </div>
+
+<!-- //FOOTER-->	
+
+	<link rel="stylesheet" href="css/main.min.css">
+	<script src="js/scripts.min.js"></script>
+
 </body>
 </html>
