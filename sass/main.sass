@@ -341,7 +341,6 @@ section
 	font-family: $default-font
 	overflow-x: hidden
 	opacity: 1
-	//margin-right: 45px
 	text-transform: uppercase
 	padding-top: 25px
 	padding-bottom: 0px
@@ -447,12 +446,6 @@ section
     height: 300px
     max-width: 100%
     vertical-align: top
-
-// .vc_column_container>.vc_column-inner 
-//     box-sizing: border-box
-//     padding-left: 15px
-//     padding-right: 15px
-//     width: 100%
 
 .wpb_single_image .vc_single_image-wrapper 
     display: inline-block
@@ -1071,6 +1064,7 @@ figure.effect-bubba:hover p
 		text-transform: none
 		letter-spacing: 0
 		font-size: 20px
+		margin-top: 0
 
 .tagcloud:after, 
 .tagcloud:before 
@@ -1516,6 +1510,76 @@ eltd-pagination>span
 .bk_row
 	position: relative
 	top: -100px
+
+.wp-caption, iframe, img, pre 
+    max-width: 100%
+
+.eltd-column-inner 
+    padding: 0 65px 0 0
+
+.eltd-top-section 
+    color: #444
+    padding: 0 5px 0 0
+
+.eltd-blog-holder article .eltd-post-info.eltd-top-section>div
+    display: inline-block
+    vertical-align: top
+    padding: 0 2px
+    a
+    	color: $accent
+	    text-decoration: none
+	    cursor: pointer
+	    transition: color .15s ease-out
+
+
+.eltd-post-info-category:before 
+    color: $accent
+    content: '/'
+    position: relative
+
+h3 
+    font-size: 28px
+    line-height: 36px
+    font-weight: 400
+	   	
+p
+    font-size: 14px
+    line-height: 25px
+    font-weight: 400
+    overflow-x: hidden!important
+    -webkit-font-smoothing: antialiased
+
+.eltd-blog-holder p
+	text-transform: none
+
+.blockquote .eltd-blockquote-text 
+    font-size: 20px
+    color: #7a7a7a
+    line-height: 32px
+
+
+blockquote .eltd-blockquote-text:before 
+    content: '“'
+    position: relative
+    left: 1px
+
+blockquote .eltd-blockquote-text:after 
+    content: '“'
+    position: relative
+    left: 1px
+
+blockquote .eltd-blockquote-text 
+    font-size: 20px
+    color: #7a7a7a
+    line-height: 32px
+    text-align: left
+
+.eltd-post-info, .eltd-post-info-comments 
+    color: #333
+    font-size: 14px
+    text-align: right
+    text-transform: uppercase
+
 
 
 @import "media" // Всегда в конце
